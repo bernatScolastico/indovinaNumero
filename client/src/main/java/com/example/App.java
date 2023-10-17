@@ -30,6 +30,7 @@ public class App
                 String str = in.readLine();
                 System.out.println("Il numero [" + tentativo + "]" + str);
             }while(true);
+            
         }
         catch (Exception e){
             System.out.println("Errore");
