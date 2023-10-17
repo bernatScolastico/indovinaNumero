@@ -12,7 +12,7 @@ public class App
     {
         try {
             //CREO UN SOCKET
-            Socket socket = new Socket("localhost", 3000);
+            Socket socket = new Socket("localhost", 6000);
             //CREO IL TUBO DA DOVE MI VIENE LA RISPOSTA DAL SERVER
             BufferedReader in = new BufferedReader (new InputStreamReader(socket.getInputStream()));
             //CREO IL TUBO DA DOVE MANDARE AL SERVER
@@ -30,7 +30,7 @@ public class App
                 String str = in.readLine();
                 System.out.println("Il numero [" + tentativo + "]" + str);
             }while(true);
-            
+
         }
         catch (Exception e){
             System.out.println("Errore");
